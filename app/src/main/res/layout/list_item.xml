@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for a single list item -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="@dimen/for_image_list_item"
+    android:orientation="horizontal"
+    android:padding="@dimen/fav_16"
+    android:background="@color/light_green">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="@dimen/for_image_list_item"
+        android:layout_height="@dimen/for_image_list_item"
+        android:scaleType="fitXY"
+        tools:src="@drawable/platinum_bath" />
+
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/for_image_list_item"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/image_text_space_in_list_item">
+
+        <TextView
+            style="@style/ListItemTextView"
+            android:id="@+id/name_text_view"
+            android:textStyle="bold"
+            tools:text="Platinus Bath" />
+
+        <TextView
+            style="@style/ListItemTextView"
+            android:id="@+id/opening_hours_text_view"
+            tools:text="Every day: 8 am to 8 pm" />
+
+    </LinearLayout>
+</LinearLayout>

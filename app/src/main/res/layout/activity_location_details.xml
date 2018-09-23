@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/details_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green"
+    tools:context="com.example.android.tourguide.LocationDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/location_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_for_image_location_details"
+            android:scaleType="fitXY"
+            tools:src="@drawable/platinum_bath" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/fav_16">
+
+            <TextView
+                android:id="@+id/location_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/small_8"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:text="Platinus Bath" />
+
+            <TextView
+                android:id="@+id/location_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/small_8" />
+
+            <LinearLayout style="@style/HorizontalLinearLayout">
+
+                <ImageView
+                    android:id="@+id/icon_clock"
+                    style="@style/StyleForIcon"
+                    android:src="@drawable/ic_action_clock" />
+
+                <TextView
+                    android:id="@+id/location_opening_hours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/fav_16" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/HorizontalLinearLayout">
+
+                <ImageView
+                    style="@style/StyleForIcon"
+                    android:src="@drawable/ic_local_phone" />
+
+                <TextView
+                    android:id="@+id/location_contact"
+                    style="@style/StyleForClickableLink"
+                    android:autoLink="phone"
+                    android:textColorLink="@android:color/holo_blue_light"
+                    tools:text="(+36 1) 340-4500" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/HorizontalLinearLayout">
+
+                <ImageView
+                    style="@style/StyleForIcon"
+                    android:src="@drawable/ic_language" />
+
+                <TextView
+                    android:id="@+id/location_website"
+                    style="@style/StyleForClickableLink"
+                    android:autoLink="web"
+                    android:textColorLink="@android:color/holo_blue_light"
+                    tools:text="http://en.palatinusstrand.hu" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/HorizontalLinearLayout">
+
+                <ImageView
+                    style="@style/StyleForIcon"
+                    android:src="@drawable/ic_place" />
+
+                <TextView
+                    android:id="@+id/location_address"
+                    style="@style/StyleForClickableLink"
+                    android:autoLink="map"
+                    android:textColor="@android:color/holo_blue_light"
+                    tools:text="address" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fav_16">16dp</dimen>
+    <dimen name="small_8">8dp</dimen>
+    <dimen name="for_icon">32dp</dimen>
+    <dimen name="for_image_list_item">96dp</dimen>
+    <dimen name="height_for_image_location_details">248dp</dimen>
+    <dimen name="image_text_space_in_list_item">24dp</dimen>
+</resources>
